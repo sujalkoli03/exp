@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class MatrixJavaPrac {
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+System.out.println("hello");
+int i,j;
+int[][] a = new int[3][3];
+int[][] b = new int[3][3];
+int[][] c = new int[3][3];
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter number of rows :
+");
+int row = sc.nextInt();
+System.out.println("Enter number of coloms :
+");
+int col = sc.nextInt();
+System.out.println("Enter "+row*col+ " elements for
+a ");
+for(i=0 ; i< row ; i++) {
+for(j=0 ; j<col ; j++) {
+a[i][j]=sc.nextInt();
+}System.out.println();
+}
+ System.out.println("Enter "+row*col+ " elements for
+b ");
+for(i=0 ; i<row ; i++) {
+for(j=0 ; j<col ; j++) {
+b[i][j]=sc.nextInt();
+}System.out.println();
+}
+
+for(i=0 ; i< row ; i++) {
+for(j=0 ; j<col ; j++) {
+c[i][j]= a[i][j]+b[i][j];
+}
+}
+System.out.println("The Addition is = ");
+for(i=0 ; i< row ; i++) {
+for(j=0 ; j<col ; j++) {
+System.out.print(c[i][j]+ " ");
+}
+System.out.println();
+}
+
+}
+}

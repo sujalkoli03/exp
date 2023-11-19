@@ -1,0 +1,78 @@
+public class sujal {
+	
+	
+   public static void main (String args[]) {
+	   
+	   int ch,a,b;
+	   
+	   
+	   
+	   do {
+		   Scanner sc = new Scanner(System.in);
+		   System.out.println("1. ADD ");
+		   System.out.println("2. SUBSTRACT");
+		   System.out.println("3. MULTIPLY");
+		   System.out.println("4. DIVIDE");
+		   System.out.println("5. FACTORIAL");
+		   System.out.println("ENter your choice= ");
+		   ch = sc.nextInt();		
+		   switch(ch) {
+		   
+		   case 1:{
+			   System.out.print("ENter a= ");
+			   a = sc.nextInt();
+			   System.out.print("ENter b= ");
+			   b = sc.nextInt();
+			   int res=a+b;
+			   System.out.println(res);
+			   
+		   }break;
+		   case 2 : 
+		   {
+			   System.out.print("ENter a= ");
+			   a = sc.nextInt();
+			   System.out.print("ENter b= ");
+			   b = sc.nextInt();
+			   int res=a-b;
+			   System.out.println(res);
+			   
+		   }break;
+		   case 3 :  {
+			   System.out.print("ENter a= ");
+			   a = sc.nextInt();
+			   System.out.print("ENter b= ");
+			   b = sc.nextInt();
+			   int res=a*b;
+			   System.out.println(res);
+			   
+		   }break;
+		   case 4 :  {
+			   System.out.print("ENter a= ");
+			   a = sc.nextInt();
+			   System.out.print("ENter b= ");
+			   b = sc.nextInt();
+			   int res=a/b;
+			   System.out.println(res);
+			   
+		   }break;
+		   case 5 :  {
+			   System.out.print("ENter a number = ");
+			   a = sc.nextInt();
+			   int fact = 1;
+			   for(int i=1 ; i<=a ; i++) {
+				  fact*=i;
+			   }
+			   System.out.println(fact);
+			   
+		   }break;
+		   default:
+			   System.out.println("ENter a valid option ");
+		   
+		   }
+		   
+		   
+	   }while(ch!=0);
+	   
+	   
+   }
+}

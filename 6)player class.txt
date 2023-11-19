@@ -1,0 +1,58 @@
+class Player1 {
+String name;
+int age;
+Player1(String n,int a){ name=n; age=a; }
+void show(){
+System.out.println("\n");
+System.out.println("Player name : "+name);
+System.out.println("Age : "+age);
+}
+}
+class cricket_player extends Player1
+{
+String type;
+cricket_player(String n,String t,int a)
+{
+super(n,a);
+type=t;
+}
+public void show(){
+super.show();
+System.out.println("Player type : "+type);
+}
+}
+class football_player extends Player1
+{
+String type;
+football_player(String n,String t,int a){
+super(n,a);
+type=t;
+}
+public void show(){
+super.show();
+System.out.println("Player type : "+type);
+}
+}
+class hockey_player extends Player1
+{
+String type;
+hockey_player(String n,String t,int a){
+super(n,a);
+type=t;
+}
+public void show(){
+super.show();
+System.out.println("Player type : "+type);
+}
+}
+public class Player {
+public static void main(String args[])
+{
+cricket_player c = new cricket_player("Ritesh","Cricket",19);
+football_player f = new football_player("Yash","Football",26);
+hockey_player h = new hockey_player("Sujal","Hockey",15);
+c.show();
+f.show();
+h.show();
+}
+}

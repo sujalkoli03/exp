@@ -1,0 +1,63 @@
+Construtor overloading :
+package mathops_sujal;
+
+public class Rect {
+
+	int length;
+	int width;
+	
+	Rect(){
+		length=0;
+		width=0;
+	}
+	Rect(int x,int y){
+		length=x;
+		width=y;
+	}
+	
+	void peri() {
+		int peri=2*(length+width);
+		
+		System.out.println("Perimeter of Rectangle is "+peri);
+	}
+	
+	public static void main(String args[]) {
+		Rect r1 = new Rect();
+		Rect r2 = new Rect(10,20);
+		r1.peri();
+		r2.peri();
+		
+		
+	}
+	
+}
+
+Output : 
+Perimeter of Rectangle is 0
+Perimeter of Rectangle is 60
+
+
+
+
+
+Method overloading :
+package mathops_sujal;
+
+public class Rect {
+	void sum(int x , int y) {
+		int sum = x+y;
+		System.out.println("Sum of Two numbers is "+sum);
+	}
+	void sum(int x , int y, int z) {
+		int sum = x+y+z;
+		System.out.println("Sum of Three numbers is "+sum);
+	}
+
+	public static void main(String args[]) {
+		Rect r1 = new Rect();
+		r1.sum(10,20);
+		r1.sum(10,20,30);
+		}
+	
+}
+

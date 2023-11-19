@@ -1,0 +1,57 @@
+package mathops_sujal;
+
+public class Rect {
+
+	void prime() {
+		int cnt=0,count=0;
+		  int prime=2,i=0,pr=2;
+		  while(count<=50)
+		  {
+			  for(i=1;i<=prime;i++)
+			  {
+				  if(prime%i==0)
+				  {
+					  
+						  cnt++;
+						  pr=prime;
+					  
+				  }
+			  }
+				  if(cnt==2)
+				  {
+					  System.out.print(pr+" ");
+					  count++;
+				  }
+				  cnt=0;
+				  prime++;
+			  }
+	}
+	
+	void sum_avg(int number) {
+		int sum=0;
+		for(int i=1; i<=number;i++) {
+			sum+=i;
+		}
+		System.out.println("Sum of "+number+" numbers is "+sum);
+		double average = sum/number;
+		System.out.println("Average of "+number+" numbers is "+average);
+	}
+void fact(int n) {
+	int fact=1;
+	for(int i=1; i<=n;i++) {
+		fact*=i;
+	}
+	System.out.println("Factorial of "+n+" numbers is "+fact);
+}
+	public static void main(String args[]) {
+		Rect r1 = new Rect();
+		
+		r1.prime();
+		System.out.println();
+		r1.fact(6);
+		System.out.println();
+		r1.sum_avg(5);
+		
+		}
+	
+}

@@ -1,0 +1,44 @@
+public class Rect {
+
+	double length;
+	double width;
+	double area;
+	String color;
+	
+	void get_length(double a) {
+		length=a;
+	}
+	void get_width(double a) {
+		width=a;
+	}
+	void get_color(String c) {
+		color=c;
+	}
+	double find_area() {
+		return length*width;
+	}
+	
+	public static void main(String args[]) {
+		Rect r1 = new Rect();
+		Rect r2 = new Rect();
+		r1.get_length(3.3);
+		r1.get_width(6.6);
+		r1.get_color("blue");
+		System.out.println(r1.find_area());
+		
+		r2.get_length(3.3);
+		r2.get_width(6.6);
+		r2.get_color("blue");
+		System.out.println(r2.find_area());
+		
+		
+		if(r1.find_area()==r2.find_area() && r1.color==r2.color) {
+			System.out.println("Both rectangles are equal");
+		}
+		else {
+			System.out.println("Both rectangles are not equal");
+		}
+		
+	}
+	
+}
